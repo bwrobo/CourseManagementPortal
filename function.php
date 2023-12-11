@@ -71,7 +71,6 @@
 
 				// Check the enrollment database for the number of active enrollments
 					$sql = "SELECT * FROM tbl_enrollment WHERE courseID ='" . $courseID . "' AND status='active'";
-					echo "<br>" . $sql . "<br>";
 					$query = mysqli_query($GLOBALS['con'],$sql);
 					$numEnrolled = mysqli_num_rows($query);
 					// Get maxEnrollment for class.
